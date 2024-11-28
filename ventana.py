@@ -195,11 +195,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.calcularDemandaCasa()
 
     def calcularDemandaCasa(self):
-        global nivelConsumo
+        global nivelConsumo, demandaMaximaCasa
 
         self.mostrarItemsOcultosInterfaz1()
 
-        global demandaMaximaCasa
         potenciaInstaladaIluminacion = 0
         potenciaInstaladaTomas = 0
 
@@ -251,7 +250,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 puntosIluminados = areaEspacio * densidadCarga / 100
                 if puntosIluminados % 1 != 0:
                     puntosIluminados += 1
-                demandaPotenciaIluminacion = puntosIluminados * 100
+                demandaPotenciaIluminacion = int(puntosIluminados) * 100
 
             demandaPotenciaTomas = tomasEspacio * 200
 
@@ -314,8 +313,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.label_potenciaFuerza.setText(str(round(demandaMaximaFuerza)) + "W")
 
-        demandaMaximaCasa = demandaMaximaTomasEIluminacion + demandaMaximaFuerza
-        self.label_demandaMaxima.setText(str(round(demandaMaximaCasa)) + "W")
+        demandaMaximaCasa = round(demandaMaximaTomasEIluminacion + demandaMaximaFuerza)
+        self.label_demandaMaxima.setText(str(demandaMaximaCasa) + "W")
 
     def verificarNumeroInterfaz1(self, numeroEntrada):
         if numeroEntrada == 1:
@@ -494,8 +493,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         tipoSistema = ""
         aislamientoConductor = ""
         tipoCaidaTension = ""
-
-        demandaMaximaCasa = 25000
 
         try:
             longitudCable = float(self.lineEdit_longitudCable.text())
