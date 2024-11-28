@@ -439,7 +439,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         demandaMaximaConjunto += demandaMaxServicios
 
-        self.label_demandaMaxConjunto.setText(str(round(demandaMaximaConjunto)))
+        self.label_demandaMaxConjunto.setText(str(round(demandaMaximaConjunto)) + "W")
         self.mostrarItemsOcultosInterfaz2()
     
     def mostrarItemsOcultosInterfaz2(self):
