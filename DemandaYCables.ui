@@ -56,7 +56,7 @@ QLineEdit {
      <number>0</number>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_1">
      <widget class="QLabel" name="label_titulo">
@@ -873,7 +873,7 @@ QLineEdit:hover {
        <rect>
         <x>100</x>
         <y>390</y>
-        <width>311</width>
+        <width>341</width>
         <height>31</height>
        </rect>
       </property>
@@ -883,13 +883,13 @@ QLineEdit:hover {
 }</string>
       </property>
       <property name="text">
-       <string>Demanda máxima de cada local:</string>
+       <string>Demanda máxima de cada local (W):</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_demandaMaxLocal">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>450</x>
         <y>390</y>
         <width>91</width>
         <height>31</height>
@@ -916,7 +916,7 @@ QLineEdit:hover {
      <widget class="QLineEdit" name="lineEdit_demandaMaxServicios">
       <property name="geometry">
        <rect>
-        <x>520</x>
+        <x>560</x>
         <y>460</y>
         <width>91</width>
         <height>31</height>
@@ -945,7 +945,7 @@ QLineEdit:hover {
        <rect>
         <x>100</x>
         <y>460</y>
-        <width>411</width>
+        <width>451</width>
         <height>31</height>
        </rect>
       </property>
@@ -955,7 +955,7 @@ QLineEdit:hover {
 }</string>
       </property>
       <property name="text">
-       <string>Demanda máxima de los servicios generales:</string>
+       <string>Demanda máxima de los servicios generales (W):</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_demandaMaxConjunto">

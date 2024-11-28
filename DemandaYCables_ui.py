@@ -377,13 +377,13 @@ class Ui_MainWindow(object):
 "}")
         self.label_numeroLocales.setObjectName("label_numeroLocales")
         self.label_demandaMaxLocal = QtWidgets.QLabel(self.page_2)
-        self.label_demandaMaxLocal.setGeometry(QtCore.QRect(100, 390, 311, 31))
+        self.label_demandaMaxLocal.setGeometry(QtCore.QRect(100, 390, 341, 31))
         self.label_demandaMaxLocal.setStyleSheet("QLabel {\n"
 "    font-size: 20px;\n"
 "}")
         self.label_demandaMaxLocal.setObjectName("label_demandaMaxLocal")
         self.lineEdit_demandaMaxLocal = QtWidgets.QLineEdit(self.page_2)
-        self.lineEdit_demandaMaxLocal.setGeometry(QtCore.QRect(410, 390, 91, 31))
+        self.lineEdit_demandaMaxLocal.setGeometry(QtCore.QRect(450, 390, 91, 31))
         self.lineEdit_demandaMaxLocal.setStyleSheet("QLineEdit {\n"
 "    border: none;\n"
 "    border-bottom: 2px solid white;\n"
@@ -397,7 +397,7 @@ class Ui_MainWindow(object):
         self.lineEdit_demandaMaxLocal.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_demandaMaxLocal.setObjectName("lineEdit_demandaMaxLocal")
         self.lineEdit_demandaMaxServicios = QtWidgets.QLineEdit(self.page_2)
-        self.lineEdit_demandaMaxServicios.setGeometry(QtCore.QRect(520, 460, 91, 31))
+        self.lineEdit_demandaMaxServicios.setGeometry(QtCore.QRect(560, 460, 91, 31))
         self.lineEdit_demandaMaxServicios.setStyleSheet("QLineEdit {\n"
 "    border: none;\n"
 "    border-bottom: 2px solid white;\n"
@@ -411,7 +411,7 @@ class Ui_MainWindow(object):
         self.lineEdit_demandaMaxServicios.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_demandaMaxServicios.setObjectName("lineEdit_demandaMaxServicios")
         self.label_demandaMaxServicios = QtWidgets.QLabel(self.page_2)
-        self.label_demandaMaxServicios.setGeometry(QtCore.QRect(100, 460, 411, 31))
+        self.label_demandaMaxServicios.setGeometry(QtCore.QRect(100, 460, 451, 31))
         self.label_demandaMaxServicios.setStyleSheet("QLabel {\n"
 "    font-size: 20px;\n"
 "}")
@@ -707,7 +707,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

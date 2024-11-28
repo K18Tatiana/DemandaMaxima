@@ -494,6 +494,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         aislamientoConductor = ""
         tipoCaidaTension = ""
 
+        demandaMaximaCasa = 35000
+
         try:
             longitudCable = float(self.lineEdit_longitudCable.text())
             temperatura = int(self.lineEdit_temperatura.text())
